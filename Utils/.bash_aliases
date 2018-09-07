@@ -13,3 +13,4 @@ alias ver='uname -a;cat /etc/debian_version;lsb_release -da;hostnamectl'
 alias man='man -P less'
 alias python=python3
 alias pip=pip3
+alias npm='node /usr/bin/npm'
