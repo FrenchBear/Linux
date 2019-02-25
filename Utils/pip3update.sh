@@ -1,7 +1,11 @@
 #!/bin/bash
 
-pip3 list --outdated | awk 'NR>2 {print $1}' | while read p
+# In Nantes, need a proxy
+PROXY=
+hostname -I | grep -q "^10.33." && PROXY="--proxy http://10.33.224.199:8080"
+
+pip3 list --outdated $PROXY | awk 'NR>2 {print $1}' | while read p
 do
 	echo $p
-	sudo -H pip3 install --upgrade $p
+	sudo -H pip3 install --upgrade $p $PROXY
 done
