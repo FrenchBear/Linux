@@ -1,4 +1,4 @@
-set sm nu ai si sw=4 ts=4 cindent 
+set sm nu ai si sw=4 ts=4 cindent ic
 set mouse=a
 set shortmess+=I
 set background=dark
