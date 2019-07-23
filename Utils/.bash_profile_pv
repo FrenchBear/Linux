@@ -9,9 +9,9 @@ export DOTNET_ROOT=$HOME/dotnet
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 fi
 
-if [ -f /usr/bin/go ]; then
+if [ -d /usr/lib/go ]; then
 echo GO configured
-export GOROOT=/usr/bin/go
+export GOROOT=/usr/lib/go
 export PATH=$PATH:$GOROOT/bin
 fi
 
