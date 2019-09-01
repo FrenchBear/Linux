@@ -14,3 +14,4 @@ alias man='man -P less'
 alias python=python3
 alias pip=pip3
 alias npm='node /usr/bin/npm'
+alias up='sudo sh -c "apt update && apt dist-upgrade && apt autoremove"'
