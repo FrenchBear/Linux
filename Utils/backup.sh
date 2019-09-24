@@ -1,2 +1,2 @@
 #! /bin/sh
-tar cvfpz pi-`uname -n`.`date +%Y-%m-%d`.tgz pi --exclude=.cache
+tar cvfpz pierre-`uname -n`.`date +%Y-%m-%d`.tgz pierre --exclude=.cache
