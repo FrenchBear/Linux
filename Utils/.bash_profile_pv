@@ -19,6 +19,11 @@ echo GO configured
 export GOROOT=/usr/lib/go
 export PATH=$PATH:$GOROOT/bin
 fi
+if [ -d /usr/local/go ]; then
+echo GO configured
+export GOROOT=/usr/ocal/go
+export PATH=$PATH:$GOROOT/bin
+fi
 
 if [ -d ~/.cargo ]; then
 echo RUST configured
