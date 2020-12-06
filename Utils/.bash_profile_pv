@@ -19,10 +19,17 @@ echo GO configured
 export GOROOT=/usr/lib/go
 export PATH=$PATH:$GOROOT/bin
 fi
+
 if [ -d /usr/local/go ]; then
 echo GO configured
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
+fi
+
+if [ -d /usr/local/node.js ]; then
+echo node.js configured
+export NODEJS_HOME=/usr/local/node.js/node-v14.15.1-linux-x64
+export PATH=$NODEJS_HOME/bin:$PATH
 fi
 
 if [ -d ~/.cargo ]; then
