@@ -4,7 +4,7 @@
 PROXY=
 hostname -I | grep -q "^10.33." && PROXY="--proxy http://10.33.224.199:8080"
 
-sudo -H python3 -m pip install --upgrade pip
+sudo -H python -m pip install --upgrade pip
 pip3 list --outdated $PROXY | fgrep wheel | awk 'NR>2 {print $1}' | while read p
 do
 	echo
