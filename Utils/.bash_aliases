@@ -13,4 +13,6 @@ alias ver='uname -a;cat /etc/debian_version;lsb_release -da'
 alias man='man -P less'
 #alias python=python3
 alias pip=pip3
+alias python=python3
 alias up='sudo sh -c "apt update && apt --yes dist-upgrade && apt --yes autoremove"'
+alias npm=/usr/bin/npm
