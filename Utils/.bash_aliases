@@ -16,3 +16,5 @@ alias pip=pip3
 alias python=python3
 alias up='sudo sh -c "apt update && apt --yes dist-upgrade && apt --yes autoremove"'
 alias npm=/usr/bin/npm
+alias gcc=gcc-14
+alias 'g++'='g++-14'

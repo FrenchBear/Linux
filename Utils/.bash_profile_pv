@@ -65,7 +65,8 @@ fi
 
 if [ -d ~/.local/bin/julia ]; then
 echo JULIA configured
-export PATH=$HOME/.local/bin/julia/bin:$PATH
+export PATH=$HOME/.juliaup/bin:$PATH
 echo " " `julia --version | sed -e s'/version //'`
 fi
 
+echo ""
